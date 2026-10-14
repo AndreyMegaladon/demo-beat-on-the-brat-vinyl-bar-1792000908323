@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asztalfoglalás | Beat On The Brat Vinyl & Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-sans antialiased selection:bg-amber-500 selection:text-black">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-neutral-900/80 backdrop-blur-md border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="text-xl font-black tracking-wider uppercase bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">Beat On The Brat</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-neutral-300 hover:text-amber-400 font-medium transition">Főoldal</a>
+                    <a href="services.html" class="text-neutral-300 hover:text-amber-400 font-medium transition">Kínálat & Menü</a>
+                    <a href="about.html" class="text-neutral-300 hover:text-amber-400 font-medium transition">Rólunk</a>
+                    <a href="gallery.html" class="text-neutral-300 hover:text-amber-400 font-medium transition">Galéria</a>
+                    <a href="contacts.html" class="text-neutral-300 hover:text-amber-400 font-medium transition">Kapcsolat</a>
+                    <a href="booking.html" class="bg-gradient-to-r from-amber-500 to-orange-600 text-neutral-950 px-5 py-2.5 rounded-xl font-bold hover:opacity-90 transition shadow-lg shadow-amber-500/20">Asztalfoglalás</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-16 bg-neutral-900/40 border-b border-neutral-800 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl sm:text-6xl font-black uppercase text-white mb-4">Asztalfoglalás</h1>
+            <p class="text-lg text-neutral-400">Biztosítsd helyed kedvenc budai lemezboltodban és bárjában.</p>
+        </div>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-neutral-900 border border-neutral-800 p-8 sm:p-12 rounded-2xl shadow-2xl">
+                <form action="https://formsubmit.co/beatonthebratbp@gmail.com" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-neutral-300 mb-2">Teljes Név</label>
+                            <input type="text" name="name" required class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition" placeholder="Kovács János">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-neutral-300 mb-2">Telefonszám</label>
+                            <input type="tel" name="phone" required class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition" placeholder="+36 30 123 4567">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-neutral-300 mb-2">Email Cím</label>
+                            <input type="email" name="email" required class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition" placeholder="pelda@email.hu">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-neutral-300 mb-2">Vendégek száma</label>
+                            <select name="guests" class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
+                                <option value="1">1 fő</option>
+                                <option value="2" selected>2 fő</option>
+                                <option value="3">3 fő</option>
+                                <option value="4">4 fő</option>
+                                <option value="5+">5+ fő (Csoport)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-neutral-300 mb-2">Dátum</label>
+                            <input type="date" name="date" required class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-neutral-300 mb-2">Időpont</label>
+                            <input type="time" name="time" required class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-neutral-300 mb-2">Szolgáltatás / Alalom</label>
+                        <select name="service" class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition">
+                            <option value="Bár & Italok">Bár asztal & Italok</option>
+                            <option value="Lemezválogatás & Kávé">Lemezválogatás & Kávézás</option>
+                            <option value="Esti találkozó">Esti baráti találkozó</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-neutral-300 mb-2">Megjegyzés (Opcionális)</label>
+                        <textarea name="comment" rows="4" class="w-full bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition" placeholder="Egyéb kérés, speciális igény..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-600 text-neutral-950 py-4 rounded-xl font-extrabold text-lg hover:opacity-95 transition shadow-lg shadow-amber-500/20">
+                        Asztalfoglalás Elküldése
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 border-t border-neutral-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-lg font-black uppercase tracking-wider text-white">Beat On The Brat Vinyl & Bar</span>
+                <p class="text-sm text-neutral-400 mt-1">Frankel Leó út 14, Budapest 1027</p>
+            </div>
+            <div class="flex space-x-6 text-sm text-neutral-400">
+                <a href="index.html" class="hover:text-amber-400 transition">Főoldal</a>
+                <a href="services.html" class="hover:text-amber-400 transition">Kínálat</a>
+                <a href="about.html" class="hover:text-amber-400 transition">Rólunk</a>
+                <a href="booking.html" class="hover:text-amber-400 transition">Foglalás</a>
+                <a href="contacts.html" class="hover:text-amber-400 transition">Kapcsolat</a>
+            </div>
+            <div class="text-xs text-neutral-500">
+                © 2026 Beat On The Brat. Minden jog fenntartva.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
